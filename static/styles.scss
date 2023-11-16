@@ -1,0 +1,108 @@
+$black: #000;
+$danger: hsl(0, 84.2%, 60.2%);
+$dark: hsl(240, 5.9%, 10%);
+$gray: hsl(240, 4.9%, 83.9%);
+$input-bg: hsl(240, 4.8%, 95.9%);
+$success: hsl(142, 70.6%, 45.3%);
+$white: #fff;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: $dark;
+    font-size: 16px;
+    font-family: Sans-Serif;
+}
+
+main {
+    height: 100vh;
+}
+
+.hrline {
+    height: 3px;
+    margin: 0 1.5rem;
+    background: $gray;
+    border-radius: 50px;
+    display: block;
+}
+
+header {
+    height: 30%;
+    padding: 2rem 0;
+    color: $white;
+    text-align: center;
+    background: $black;
+    border-radius: 0 0 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: default;
+}
+
+section.form {
+    padding: 1.5rem;
+    form {
+        display: grid;
+        gap: 0.7rem;
+        input, button {
+            padding: 1rem;
+            background: none;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            outline: none;
+        }
+        input {
+            background: $input-bg;
+        }
+        button {
+            background: $black;
+            color: $white;
+            transition: 200ms;
+            cursor: pointer;
+            &:hover {
+                background: $dark;
+            }
+        }
+    }
+    .error {
+        padding: 0.2rem;
+        color: $danger;
+        font-size: 0.9rem;
+    }
+}
+
+section.output {
+    padding: 1.5rem;
+    > div {
+        display: flex;
+        input, button {
+            padding: 1rem;
+            font-size: 1rem;
+            background: none;
+            border: none;
+            outline: none;
+        }
+        input {
+            background: $input-bg;
+        }
+        button {
+            background: $black;
+            color: $white;
+            transition: 200ms;
+            cursor: pointer;
+            &:hover {
+                background: $dark;
+            }
+        }
+    }
+    .message {
+        padding: 0.2rem;
+        color: $success;
+        font-size: 0.9rem;
+    }
+}

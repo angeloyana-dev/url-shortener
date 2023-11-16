@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #18181b;
+  font-size: 16px;
+  font-family: Sans-Serif;
+}
+
+main {
+  height: 100vh;
+}
+
+.hrline {
+  height: 3px;
+  margin: 0 1.5rem;
+  background: #d4d4d8;
+  border-radius: 50px;
+  display: block;
+}
+
+header {
+  height: 30%;
+  padding: 2rem 0;
+  color: #fff;
+  text-align: center;
+  background: #000;
+  border-radius: 0 0 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: default;
+}
+
+section.form {
+  padding: 1.5rem;
+}
+
+section.form form {
+  display: grid;
+  gap: 0.7rem;
+}
+
+section.form form input, section.form form button {
+  padding: 1rem;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+section.form form input {
+  background: #f4f4f5;
+}
+
+section.form form button {
+  background: #000;
+  color: #fff;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+section.form form button:hover {
+  background: #18181b;
+}
+
+section.form .error {
+  padding: 0.2rem;
+  color: #ef4444;
+  font-size: 0.9rem;
+}
+
+section.output {
+  padding: 1.5rem;
+}
+
+section.output > div {
+  display: flex;
+}
+
+section.output > div input, section.output > div button {
+  padding: 1rem;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+section.output > div input {
+  background: #f4f4f5;
+}
+
+section.output > div button {
+  background: #000;
+  color: #fff;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+section.output > div button:hover {
+  background: #18181b;
+}
+
+section.output .message {
+  padding: 0.2rem;
+  color: #22c55e;
+  font-size: 0.9rem;
+}
